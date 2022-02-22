@@ -37,12 +37,43 @@
   <div class="navbar-brand">
     <a class="nav-link" href="#" id="nav-all">Hack or Snooze</a>
   </div>
+  <div class="nav-left">
+    <a class="nav-link hidden" href="#" id="nav-submit">submit</a>
+  </div>
   <div class="nav-right">
     <a class="nav-link" href="#" id="nav-login">login/signup</a>
     <a class="nav-link" href="#" id="nav-user-profile"></a>
     <a class="hidden" id="nav-logout" href="#"><small>(logout)</small></a>
   </div>
 </nav>
+
+<!-- Submit form -->
+<section class="submit-story-form-container container">
+  <form
+    action="#"
+    id="submit-story-form"
+    class="submit-story-form hidden"
+    method="post">
+  <h4>Submit</h4>
+  <div class="submit-story-input">
+    <label for="submit-story-author">author</label>
+    <input id="submit-story-author" placeholder="author name">
+  </div>
+  <div class="submit-story-input">
+    <label for="submit-story-title">title</label>
+    <input id="submit-story-title" placeholder="story title">
+  </div>
+  <div class="submit-story-input">
+    <label for="submit-story-url">url</label>
+    <input id="submit-story-url" placeholder="story url">
+  </div>
+  <div class="button-wrapper">
+  <button type="submit" id="submit-story-button">Submit</button> 
+  <button id="cancel-submit-story-button">Cancel</button>
+</div>
+</form>
+</section>
+
 
 <!-- area for stories (all stories, user stories, favorites) -->
 <section class="stories-container container">
